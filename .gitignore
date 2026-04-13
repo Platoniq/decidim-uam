@@ -50,3 +50,5 @@
 
 # Ignore Tailwind configuration
 tailwind.config.js
+
+.rspec-failures
