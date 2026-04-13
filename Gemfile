@@ -4,15 +4,17 @@ source "https://rubygems.org"
 
 ruby RUBY_VERSION
 
-gem "decidim", "0.31.2"
-# gem "decidim-ai", "0.31.2"
-# gem "decidim-collaborative_texts", "0.31.2"
-# gem "decidim-conferences", "0.31.2"
-# gem "decidim-demographics", "0.31.2"
-# gem "decidim-design", "0.31.2"
-# gem "decidim-elections", "0.31.2"
-# gem "decidim-initiatives", "0.31.2"
-# gem "decidim-templates", "0.31.2"
+DECIDIM_VERSION = "~> 0.31.2"
+
+gem "decidim", DECIDIM_VERSION
+# gem "decidim-ai", DECIDIM_VERSION
+# gem "decidim-collaborative_texts", DECIDIM_VERSION
+# gem "decidim-conferences", DECIDIM_VERSION
+# gem "decidim-demographics", DECIDIM_VERSION
+# gem "decidim-design", DECIDIM_VERSION
+# gem "decidim-elections", DECIDIM_VERSION
+# gem "decidim-initiatives", DECIDIM_VERSION
+# gem "decidim-templates", DECIDIM_VERSION
 
 gem "bootsnap", "~> 1.3"
 
@@ -22,7 +24,7 @@ group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
 
   gem "brakeman", "~> 7.0"
-  gem "decidim-dev", "0.31.2"
+  gem "decidim-dev", DECIDIM_VERSION
   gem "net-imap", "~> 0.5.0"
   gem "net-pop", "~> 0.1.1"
 end
