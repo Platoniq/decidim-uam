@@ -1,5 +1,8 @@
 # decidim_uam
 
+[![[CI] Lint](https://github.com/Platoniq/decidim-uam/actions/workflows/lint.yml/badge.svg)](https://github.com/Platoniq/decidim-uam/actions/workflows/lint.yml)
+[![[CI] Test](https://github.com/Platoniq/decidim-uam/actions/workflows/test.yml/badge.svg)](https://github.com/Platoniq/decidim-uam/actions/workflows/test.yml)
+
 Free Open-Source participatory democracy, citizen participation and open government for cities and organizations
 
 This is the open-source repository for decidim_uam, based on [Decidim](https://github.com/decidim/decidim).
