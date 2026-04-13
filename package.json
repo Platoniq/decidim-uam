@@ -1,6 +1,16 @@
 {
   "name": "decidim-development-app",
   "private": true,
+  "scripts": {
+    "lint": "eslint -c .eslintrc.json --no-error-on-unmatched-pattern --ext .js,.jsx",
+    "markdownlint": "markdownlint '**/*.md'",
+    "stylelint": "stylelint app/**/*.scss",
+    "prettier": "prettier --check 'app/**/*.scss'",
+    "prettify": "prettier --write 'app/**/*.scss'"
+  },
+  "stylelint": {
+    "extends": "@decidim/stylelint-config"
+  },
   "dependencies": {
     "@decidim/browserslist-config": "^0.31.3",
     "@decidim/core": "^0.31.3",

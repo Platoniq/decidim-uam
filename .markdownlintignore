@@ -1,0 +1,4 @@
+node_modules/
+*/public/decidim-packs/
+dev/assets/iso-8859-15.md
+vendor/bundle

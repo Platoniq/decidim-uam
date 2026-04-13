@@ -1,2 +1,24 @@
+inherit_from: .rubocop_todo.yml
+
 inherit_gem:
   decidim-dev: rubocop-decidim.yml
+
+inherit_mode:
+  merge:
+    - Exclude
+
+AllCops:
+  Include:
+    - "**/*.rb"
+    - "**/*.rake"
+    - "**/*.ru"
+    - "**/Gemfile"
+    - "**/Rakefile"
+  Exclude:
+    - "bin/**/*"
+    - "node_modules/**/*"
+    - "**/node_modules/**/*"
+    - "db/schema.rb"
+    - "db/migrate/*"
+    - "vendor/**/*"
+    - "**/vendor/**/*"
