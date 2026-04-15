@@ -47,5 +47,6 @@ group :development do
 end
 
 group :production do
+  gem "appsignal"
   gem "sidekiq", "~> 7.0"
 end
