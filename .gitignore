@@ -52,3 +52,5 @@
 tailwind.config.js
 
 .rspec-failures
+
+/public/sw.js*
