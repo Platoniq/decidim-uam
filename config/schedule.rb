@@ -1,0 +1,41 @@
+# frozen_string_literal: true
+
+every 1.day, at: "2:00 am", roles: [:worker] do
+  rake "decidim:open_data:export"
+end
+
+every 15.minutes do
+  rake "decidim_participatory_processes:change_active_step"
+end
+
+every 1.day, at: "3:00 am" do
+  rake "decidim_meetings:clean_registration_forms"
+end
+
+every 1.day, at: "5:00 am", roles: [:worker] do
+  rake "decidim:delete_download_your_data_files"
+end
+
+every 1.day, at: "5:00 am", roles: [:worker] do
+  rake "decidim:mailers:notifications_digest_daily"
+end
+
+every 1.day, at: "6:00 am", roles: [:worker] do
+  rake "decidim:reminders:all"
+end
+
+every 1.day, at: "7:00 am", roles: [:worker] do
+  rake "decidim_initiatives:check_validating"
+end
+
+every 1.day, at: "7:30 am", roles: [:worker] do
+  rake "decidim_initiatives:check_published"
+end
+
+every 1.day, at: "8:00 am", roles: [:worker] do
+  rake "decidim_initiatives:notify_progress"
+end
+
+every :saturday, at: "5:00 am", roles: [:worker] do
+  rake "decidim:mailers:notifications_digest_weekly"
+end

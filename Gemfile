@@ -20,6 +20,8 @@ gem "bootsnap", "~> 1.3"
 
 gem "puma", ">= 6.3.1"
 
+gem "whenever", require: false
+
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
 
@@ -33,4 +35,17 @@ group :development do
   gem "letter_opener_web", "~> 2.0"
   gem "listen", "~> 3.1"
   gem "web-console", "~> 4.2"
+
+  gem "capistrano", "~> 3.19"
+  gem "capistrano-bundler"
+  gem "capistrano-nvm"
+  gem "capistrano-passenger"
+  gem "capistrano-rails"
+  gem "capistrano-rails-console"
+  gem "capistrano-rbenv"
+  gem "capistrano-sidekiq"
+end
+
+group :production do
+  gem "sidekiq", "~> 7.0"
 end
