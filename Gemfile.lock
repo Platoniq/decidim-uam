@@ -867,7 +867,7 @@ GEM
       ostruct
     sshkit-interactive (0.3.0)
       sshkit (~> 1.12)
-    stringio (3.1.7)
+    stringio (3.1.1)
     strscan (3.1.5)
     temple (0.10.4)
     terminal-table (4.0.0)
