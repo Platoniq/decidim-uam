@@ -34,9 +34,9 @@ require "capistrano/bundler"
 require "capistrano/rails/assets"
 require "capistrano/rails/migrations"
 require "capistrano/rails/console"
-require "capistrano/whenever"
 require "capistrano/passenger"
 require "capistrano/sidekiq"
+require "whenever/capistrano"
 install_plugin Capistrano::Sidekiq # default sidekiq tasks
 install_plugin Capistrano::Sidekiq::Systemd # service manager: systemd
 
