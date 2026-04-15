@@ -4,7 +4,7 @@
 lock "~> 3.19"
 
 set :application, "decidim-uam"
-set :repo_url, "git@github.com:Platoniq/decidim-uam.git"
+set :repo_url, "https://github.com/Platoniq/decidim-uam.git"
 
 # Default branch is :main
 set :branch, `git rev-parse --abbrev-ref HEAD`.chomp
