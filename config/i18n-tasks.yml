@@ -1,0 +1,7 @@
+---
+
+base_locale: en
+locales: [en]
+
+ignore_unused:
+  - "decidim.system.organizations.omniauth_settings.uam.*"
