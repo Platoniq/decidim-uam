@@ -18,14 +18,14 @@ if Decidim::Env.new("OMNIAUTH_UAM_ENABLED").to_boolean_string == "true"
 
   uam_settings = {
     enabled: true,
-    icon: "shield-user-line",
+    icon_path: Decidim::Env.new("OMNIAUTH_UAM_SP_ENTITY_ID", "media/images/uam.svg").to_s,
     sp_entity_id: Decidim::Env.new("OMNIAUTH_UAM_SP_ENTITY_ID").to_s,
     assertion_consumer_service_url: Decidim::Env.new("OMNIAUTH_UAM_ACS_URL").to_s,
     certificate: Decidim::Env.new("OMNIAUTH_UAM_SP_CERTIFICATE").to_s,
     private_key: Decidim::Env.new("OMNIAUTH_UAM_SP_PRIVATE_KEY").to_s,
     name_identifier_format: Decidim::Env.new(
       "OMNIAUTH_UAM_NAME_IDENTIFIER_FORMAT",
-      "urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified"
+      "urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress"
     ).to_s,
     attr_uid: Decidim::Env.new("OMNIAUTH_UAM_ATTR_UID", "uid").to_s,
     attr_email: Decidim::Env.new("OMNIAUTH_UAM_ATTR_EMAIL", "mail").to_s,
