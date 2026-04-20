@@ -1,3 +1,4 @@
+---
 es:
   decidim:
     system:
@@ -5,10 +6,10 @@ es:
         omniauth_settings:
           uam:
             assertion_consumer_service_url: Assertion consumer service URL
+            attr_displayname: Atributo para displayname
             attr_email: Atributo para email
             attr_name: Atributo para name
             attr_surname: Atributo para surname
-            attr_displayname: Atributo para displayname
             attr_uid: Atributo para UID
             certificate: Certificate
             name_identifier_format: Name identifier format
