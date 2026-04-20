@@ -6,3 +6,11 @@
 // available at https://docs.decidim.org/en/develop/customize/styles.html#_tailwind_css
 //
 // By default this is empty.
+
+.login__omniauth-button--uam {
+  padding: .5rem 1.25rem;
+  svg {
+    height: 2rem;
+    width: 2rem;
+  }
+}
