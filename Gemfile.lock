@@ -401,6 +401,10 @@ GEM
     doorkeeper (5.9.0)
       railties (>= 5)
     doorkeeper-i18n (4.0.1)
+    dotenv (3.1.8)
+    dotenv-rails (3.1.8)
+      dotenv (= 3.1.8)
+      railties (>= 6.1)
     drb (2.2.3)
     dry-auto_inject (1.1.0)
       dry-core (~> 1.1)
@@ -989,6 +993,7 @@ DEPENDENCIES
   decidim-dev (~> 0.31.3)
   decidim-elections (~> 0.31.3)
   decidim-templates (~> 0.31.3)
+  dotenv-rails
   letter_opener_web (~> 2.0)
   listen (~> 3.1)
   net-imap (~> 0.5.0)

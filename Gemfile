@@ -48,6 +48,7 @@ end
 
 group :production do
   gem "appsignal"
+  gem "dotenv-rails"
   gem "sidekiq", "~> 7.0"
   gem "whenever", require: false
 end
