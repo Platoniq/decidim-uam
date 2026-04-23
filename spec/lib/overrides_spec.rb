@@ -10,7 +10,9 @@ checksums = [
     package: "decidim-core",
     files: {
       # views
-      "/app/views/layouts/decidim/footer/_mini.html.erb" => "c67cc97db27cdcf926f60682e399f688"
+      "/app/views/layouts/decidim/footer/_mini.html.erb" => "c67cc97db27cdcf926f60682e399f688",
+      # Tailwind config override (custom fonts)
+      "/lib/decidim/assets/tailwind/tailwind.config.js.erb" => "1660c07ffa0dce33f5e6d20580c62d05"
     }
   }
 ]

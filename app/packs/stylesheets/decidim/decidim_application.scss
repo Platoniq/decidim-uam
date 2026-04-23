@@ -4,5 +4,51 @@
 //
 // To override the Tailwind CSS configuration you can do so by following the instructions
 // available at https://docs.decidim.org/en/develop/customize/styles.html#_tailwind_css
-//
-// By default this is empty.
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/roboto/roboto-v51-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 400;
+  src: url("fonts/roboto/roboto-v51-latin-italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  src: url("fonts/roboto/roboto-v51-latin-600.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 600;
+  src: url("fonts/roboto/roboto-v51-latin-600italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/roboto/roboto-v51-latin-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 700;
+  src: url("fonts/roboto/roboto-v51-latin-700italic.woff2") format("woff2");
+}
