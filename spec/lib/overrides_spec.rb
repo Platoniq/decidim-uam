@@ -9,7 +9,12 @@ checksums = [
   {
     package: "decidim-core",
     files: {
-      "/app/controllers/decidim/devise/omniauth_registrations_controller.rb" => "cafb652eb07048c88a4c233e4fce77d5"
+      # avoid CSRF issue with SAML
+      "/app/controllers/decidim/devise/omniauth_registrations_controller.rb" => "cafb652eb07048c88a4c233e4fce77d5",
+      # views
+      "/app/views/layouts/decidim/footer/_mini.html.erb" => "c67cc97db27cdcf926f60682e399f688",
+      # Tailwind config override (custom fonts)
+      "/lib/decidim/assets/tailwind/tailwind.config.js.erb" => "1660c07ffa0dce33f5e6d20580c62d05"
     }
   }
 ]
@@ -17,7 +22,6 @@ checksums = [
 describe "Overridden files", type: :view do
   checksums.each do |item|
     spec = Gem::Specification.find_by_name(item[:package])
-
     item[:files].each do |file, signature|
       next unless spec
 

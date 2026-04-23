@@ -1,7 +1,16 @@
 ---
 
 base_locale: en
-locales: [en]
+locales: [en, es]
+
+data:
+  read:
+    - 'config/locales/*.%{locale}.yml'
+
+ignore_missing:
+  - layouts.decidim.footer.cc_by_license
+  - layouts.decidim.footer.decidim_logo
+  - layouts.decidim.footer.made_with_open_source
 
 ignore_unused:
-  - "decidim.system.organizations.omniauth_settings.uam.*"
+  - 'decidim.system.organizations.omniauth_settings.uam.*'
