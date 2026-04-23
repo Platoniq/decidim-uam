@@ -20,7 +20,7 @@ gem "bootsnap", "~> 1.3"
 
 gem "puma", ">= 6.3.1"
 
-gem "whenever", require: false
+gem "omniauth-saml", "~> 2.2"
 
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
@@ -48,5 +48,7 @@ end
 
 group :production do
   gem "appsignal"
+  gem "dotenv-rails"
   gem "sidekiq", "~> 7.0"
+  gem "whenever", require: false
 end

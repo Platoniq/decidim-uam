@@ -52,3 +52,12 @@
   font-weight: 700;
   src: url("fonts/roboto/roboto-v51-latin-700italic.woff2") format("woff2");
 }
+
+.login__omniauth-button--uam {
+  padding: 0.5rem 1.25rem !important;
+
+  svg {
+    height: 2rem;
+    width: 2rem;
+  }
+}

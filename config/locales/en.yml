@@ -28,3 +28,18 @@
 #       enabled: "ON"
 
 en:
+  decidim:
+    system:
+      organizations:
+        omniauth_settings:
+          uam:
+            assertion_consumer_service_url: Assertion consumer service URL
+            attr_displayname: Attribute for displayname
+            attr_email: Attribute for email
+            attr_name: Attribute for name
+            attr_surname: Attribute for surname
+            attr_uid: Attribute for UID
+            certificate: Certificate
+            name_identifier_format: Name identifier format
+            private_key: Private key
+            sp_entity_id: SP Entity ID
