@@ -4,7 +4,7 @@ source "https://rubygems.org"
 
 ruby RUBY_VERSION
 
-DECIDIM_VERSION = "~> 0.31.3"
+DECIDIM_VERSION = "~> 0.31.4"
 
 gem "decidim", DECIDIM_VERSION
 gem "decidim-ai", DECIDIM_VERSION
@@ -15,6 +15,9 @@ gem "decidim-design", DECIDIM_VERSION
 gem "decidim-elections", DECIDIM_VERSION
 # gem "decidim-initiatives", DECIDIM_VERSION
 gem "decidim-templates", DECIDIM_VERSION
+
+gem "decidim-decidim_awesome", git: "https://github.com/decidim-ice/decidim-module-decidim_awesome", branch: "main"
+gem "decidim-term_customizer", git: "https://github.com/openpoke/decidim-module-term_customizer", branch: "main"
 
 gem "bootsnap", "~> 1.3"
 
