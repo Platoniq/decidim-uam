@@ -16,6 +16,8 @@ gem "decidim-elections", DECIDIM_VERSION
 # gem "decidim-initiatives", DECIDIM_VERSION
 gem "decidim-templates", DECIDIM_VERSION
 
+gem "decidim-decidim_awesome", git: "https://github.com/decidim-ice/decidim-module-decidim_awesome", branch: "main"
+
 gem "bootsnap", "~> 1.3"
 
 gem "puma", ">= 6.3.1"

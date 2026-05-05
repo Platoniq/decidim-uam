@@ -1,3 +1,15 @@
+GIT
+  remote: https://github.com/decidim-ice/decidim-module-decidim_awesome
+  revision: 017b7a998c1a7b9ac926ba185dffac76ddc28c56
+  branch: main
+  specs:
+    decidim-decidim_awesome (0.14.2)
+      active_hashcash (~> 0.4.0)
+      decidim-admin (>= 0.31.0, < 0.32)
+      decidim-core (>= 0.31.0, < 0.32)
+      deface (>= 1.5)
+      sassc (~> 2.3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -45,6 +57,8 @@ GEM
       erubi (~> 1.11)
       rails-dom-testing (~> 2.2)
       rails-html-sanitizer (~> 1.6)
+    active_hashcash (0.4.0)
+      rails (>= 5.2.0)
     active_link_to (1.0.5)
       actionpack
       addressable
@@ -377,6 +391,12 @@ GEM
     declarative-builder (0.2.0)
       trailblazer-option (~> 0.1.0)
     declarative-option (0.1.0)
+    deface (1.9.0)
+      actionview (>= 5.2)
+      nokogiri (>= 1.6)
+      polyglot
+      railties (>= 5.2)
+      rainbow (>= 2.1.0)
     devise (4.9.4)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -659,6 +679,7 @@ GEM
     pg_search (2.3.7)
       activerecord (>= 6.1)
       activesupport (>= 6.1)
+    polyglot (0.3.5)
     pp (0.6.2)
       prettyprint
     premailer (1.29.0)
@@ -850,6 +871,8 @@ GEM
       google-protobuf (~> 4.31)
     sass-embedded (1.99.0-x86_64-linux-gnu)
       google-protobuf (~> 4.31)
+    sassc (2.4.0)
+      ffi (~> 1.9)
     securerandom (0.4.1)
     selenium-webdriver (4.43.0)
       base64 (~> 0.2)
@@ -979,6 +1002,7 @@ DEPENDENCIES
   decidim (~> 0.31.3)
   decidim-ai (~> 0.31.3)
   decidim-collaborative_texts (~> 0.31.3)
+  decidim-decidim_awesome!
   decidim-design (~> 0.31.3)
   decidim-dev (~> 0.31.3)
   decidim-elections (~> 0.31.3)
