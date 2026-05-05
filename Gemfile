@@ -4,7 +4,7 @@ source "https://rubygems.org"
 
 ruby RUBY_VERSION
 
-DECIDIM_VERSION = "~> 0.31.3"
+DECIDIM_VERSION = "~> 0.31.4"
 
 gem "decidim", DECIDIM_VERSION
 gem "decidim-ai", DECIDIM_VERSION
