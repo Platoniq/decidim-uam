@@ -433,6 +433,10 @@ GEM
     doorkeeper (5.9.0)
       railties (>= 5)
     doorkeeper-i18n (4.0.1)
+    dotenv (3.1.8)
+    dotenv-rails (3.1.8)
+      dotenv (= 3.1.8)
+      railties (>= 6.1)
     drb (2.2.3)
     dry-auto_inject (1.1.0)
       dry-core (~> 1.1)
@@ -671,6 +675,9 @@ GEM
     omniauth-rails_csrf_protection (1.0.2)
       actionpack (>= 4.2)
       omniauth (~> 2.0)
+    omniauth-saml (2.2.4)
+      omniauth (~> 2.1)
+      ruby-saml (~> 1.18)
     omniauth-twitter (1.4.0)
       omniauth-oauth (~> 1.1)
       rack
@@ -877,6 +884,9 @@ GEM
       lint_roller (~> 1.1)
       rubocop (~> 1.72, >= 1.72.1)
     ruby-progressbar (1.13.0)
+    ruby-saml (1.18.1)
+      nokogiri (>= 1.13.10)
+      rexml
     ruby-vips (2.3.0)
       ffi (~> 1.12)
       logger
@@ -936,7 +946,7 @@ GEM
       ostruct
     sshkit-interactive (0.3.0)
       sshkit (~> 1.12)
-    stringio (3.2.0)
+    stringio (3.1.1)
     strscan (3.1.8)
     temple (0.10.4)
     terminal-table (4.0.0)
@@ -1026,10 +1036,12 @@ DEPENDENCIES
   decidim-elections (~> 0.31.4)
   decidim-templates (~> 0.31.4)
   decidim-term_customizer!
+  dotenv-rails
   letter_opener_web (~> 2.0)
   listen (~> 3.1)
   net-imap (~> 0.5.0)
   net-pop (~> 0.1.1)
+  omniauth-saml (~> 2.2)
   puma (>= 6.3.1)
   sidekiq (~> 7.0)
   web-console (~> 4.2)

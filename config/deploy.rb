@@ -28,7 +28,7 @@ set :bundle_path, nil
 set :bundle_without, nil
 set :bundle_flags, nil
 
-set :linked_files, ["config/master.key", ".rbenv-vars"]
+set :linked_files, ["config/master.key", ".rbenv-vars", ".env"]
 
 set :linked_dirs, ["log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "public/uploads", "storage", "node_modules", "public/decidim-packs"]
 
