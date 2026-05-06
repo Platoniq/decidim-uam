@@ -11,6 +11,8 @@ checksums = [
     files: {
       # avoid CSRF issue with SAML
       "/app/controllers/decidim/devise/omniauth_registrations_controller.rb" => "cafb652eb07048c88a4c233e4fce77d5",
+      # extended with Decidim::UserOverride (students scope, student? predicate)
+      "/app/models/decidim/user.rb" => "feff90d1d03a5f2b8f9686e98320f18a",
       # views
       "/app/views/layouts/decidim/footer/_mini.html.erb" => "c67cc97db27cdcf926f60682e399f688",
       # Tailwind config override (custom fonts)
