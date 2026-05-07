@@ -29,6 +29,9 @@
 
 en:
   decidim:
+    profiles:
+      show:
+        student: Student
     system:
       organizations:
         omniauth_settings:

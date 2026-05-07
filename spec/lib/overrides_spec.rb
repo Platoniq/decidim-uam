@@ -9,6 +9,13 @@ checksums = [
   {
     package: "decidim-core",
     files: {
+      # cell views overridden to add the student badge
+      "/app/cells/decidim/author/badge.erb" => "229d4ea78d53e181801b7d43f150da1f",
+      "/app/cells/decidim/author_cell.rb" => "654c1ad4fc99765bba7901f891fe2040",
+      "/app/cells/decidim/profile/badge.erb" => "2780148e5dc37ebbd30dd59f06587844",
+      "/app/cells/decidim/profile_cell.rb" => "8596fc0dc050800fbb9fe38b59f1baf6",
+      "/app/cells/decidim/user_profile/show.erb" => "c012fd9c5e5e7753f471660d92a6eb8e",
+      "/app/cells/decidim/user_profile_cell.rb" => "0f20d006ccf4df77c59e3a2333a28a10",
       # avoid CSRF issue with SAML
       "/app/controllers/decidim/devise/omniauth_registrations_controller.rb" => "cafb652eb07048c88a4c233e4fce77d5",
       # extended with Decidim::UserOverride (students scope, student? predicate)
