@@ -5,9 +5,11 @@ locales: [en, es]
 
 data:
   read:
+    - 'config/locales/%{locale}.yml'
     - 'config/locales/*.%{locale}.yml'
 
 ignore_missing:
+  - decidim.author.avatar
   - layouts.decidim.footer.cc_by_license
   - layouts.decidim.footer.decidim_logo
   - layouts.decidim.footer.made_with_open_source
