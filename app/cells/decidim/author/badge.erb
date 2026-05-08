@@ -1,0 +1,12 @@
+<% if show_badge? %>
+  <span class="author__badge">
+    <%= icon "star-s-fill" %>
+    <span class="sr-only"><%= officialization_text %></span>
+  </span>
+<% end %>
+<% if show_student_badge? %>
+  <span class="author__badge">
+    <%= icon "team-line" %>
+    <span class="sr-only"><%= student_badge_text %></span>
+  </span>
+<% end %>

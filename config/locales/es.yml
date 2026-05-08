@@ -1,6 +1,9 @@
 ---
 es:
   decidim:
+    profiles:
+      show:
+        student: Estudiante
     system:
       organizations:
         omniauth_settings:
