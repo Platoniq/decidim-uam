@@ -1,9 +1,6 @@
 <section class="<%= section_class %> participatory-space__metadata-modal">
-  <div class="flag-line"></div>
-  <div data-dialog-container>
-    <%= icon "flag-line" %>
-    <h3><%= t("decidim.participatory_process_steps.index.process_steps") %></h3>
-    <div>
+  <h2 class="home__section-title"><%= t("decidim.participatory_process_steps.index.process_steps") %></h2>
+  <div>
       <div class="participatory-space__metadata-modal__list-container" data-controller="accordion" data-multiselectable="false" data-collapsible="false">
         <ol class="participatory-space__metadata-modal__list">
           <% steps.each_with_index do |step, i| %>
@@ -43,6 +40,6 @@
           <% end %>
         </div>
       </div>
-    </div>
   </div>
 </section>
+
