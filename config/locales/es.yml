@@ -1,6 +1,10 @@
 ---
 es:
   decidim:
+    uam:
+      content_blocks:
+        process_phases:
+          name: Fases del proceso
     system:
       organizations:
         omniauth_settings:
