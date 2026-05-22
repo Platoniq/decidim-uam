@@ -11,6 +11,8 @@ ignore_missing:
   - layouts.decidim.footer.cc_by_license
   - layouts.decidim.footer.decidim_logo
   - layouts.decidim.footer.made_with_open_source
+  - decidim.participatory_process_steps.index.process_steps
+  - layouts.decidim.participatory_processes.participatory_process.active_step
 
 ignore_unused:
   - 'decidim.system.organizations.omniauth_settings.uam.*'
