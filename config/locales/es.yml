@@ -4,10 +4,6 @@ es:
     profiles:
       show:
         student: Estudiante
-    uam:
-      content_blocks:
-        process_phases:
-          name: Fases del proceso
     system:
       organizations:
         omniauth_settings:
@@ -22,3 +18,7 @@ es:
             name_identifier_format: Name identifier format
             private_key: Private key
             sp_entity_id: SP Entity ID
+    uam:
+      content_blocks:
+        process_phases:
+          name: Fases del proceso
