@@ -1,0 +1,44 @@
+<section class="<%= section_class %> participatory-space__metadata-modal">
+  <h2 class="home__section-title"><%= t("decidim.participatory_process_steps.index.process_steps") %></h2>
+  <div>
+      <div class="participatory-space__metadata-modal__list-container" data-controller="accordion" data-multiselectable="false" data-collapsible="false">
+        <ol class="participatory-space__metadata-modal__list">
+          <% steps.each_with_index do |step, i| %>
+            <% active = step == active_step %>
+            <li>
+              <% if steps.length == 1 %>
+                <div id="trigger-process-phases-<%= i %>" class="participatory-space__metadata-modal__step<%= " is-active" if active %>">
+                  <span><%= step.position + 1 %></span>
+                  <span>
+                    <span class="participatory-space__metadata-modal__step-title">
+                      <span class="participatory-space__metadata-modal__step-current"><%= t("active_step", scope: "layouts.decidim.participatory_processes.participatory_process") %></span>
+                      <%= decidim_escape_translated(step.title) %>
+                    </span>
+                    <span class="participatory-space__metadata-modal__step-dates"><%= step_dates(step) %></span>
+                  </span>
+                </div>
+              <% else %>
+                <button id="trigger-process-phases-<%= i %>" class="participatory-space__metadata-modal__step<%= " is-active" if active %>" data-controls="panel-process-phases-<%= i %>" data-open="<%= "true" if active %>">
+                  <span><%= step.position + 1 %></span>
+                  <span>
+                    <span class="participatory-space__metadata-modal__step-title">
+                      <span class="participatory-space__metadata-modal__step-current"><%= t("active_step", scope: "layouts.decidim.participatory_processes.participatory_process") %></span>
+                      <%= decidim_escape_translated(step.title) %>
+                    </span>
+                    <span class="participatory-space__metadata-modal__step-dates"><%= step_dates(step) %></span>
+                  </span>
+                </button>
+              <% end %>
+            </li>
+          <% end %>
+        </ol>
+        <div>
+          <% steps.each_with_index do |step, i| %>
+            <div id="panel-process-phases-<%= i %>" class="editor-content">
+              <%= decidim_sanitize_editor_admin(translated_attribute(step.description)) %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+  </div>
+</section>

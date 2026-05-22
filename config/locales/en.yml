@@ -4,6 +4,10 @@ en:
     profiles:
       show:
         student: Student
+    uam:
+      content_blocks:
+        process_phases:
+          name: Process phases
     system:
       organizations:
         omniauth_settings:
