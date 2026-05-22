@@ -1,0 +1,12 @@
+<% if profile_holder.officialized? %>
+  <span class="profile__details-badge">
+    <%= icon "star-s-fill" %>
+    <%= officialization_text %>
+  </span>
+<% end %>
+<% if show_student_badge? %>
+  <span class="profile__details-badge">
+    <%= icon "team-line" %>
+    <%= student_badge_text %>
+  </span>
+<% end %>

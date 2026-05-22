@@ -61,3 +61,7 @@
     width: 2rem;
   }
 }
+
+.profile__user-avatar-badge + .profile__user-avatar-badge {
+  right: 1rem;
+}
