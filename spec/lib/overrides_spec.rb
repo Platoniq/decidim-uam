@@ -16,6 +16,13 @@ checksums = [
       # Tailwind config override (custom fonts)
       "/lib/decidim/assets/tailwind/tailwind.config.js.erb" => "1660c07ffa0dce33f5e6d20580c62d05"
     }
+  },
+  {
+    package: "decidim-participatory_processes",
+    files: {
+      # source view for the custom process phases content block cell
+      "/app/cells/decidim/participatory_processes/process_step/show.erb" => "93c7c8ea589de56c52b496d80271523b"
+    }
   }
 ]
 
