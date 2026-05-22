@@ -68,3 +68,7 @@
   line-height: 1.2;
   margin-bottom: 0.25em;
 }
+
+.profile__user-avatar-badge + .profile__user-avatar-badge {
+  right: 1rem;
+}
