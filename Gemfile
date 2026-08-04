@@ -22,6 +22,7 @@ gem "decidim-term_customizer", git: "https://github.com/openpoke/decidim-module-
 gem "bootsnap", "~> 1.3"
 
 gem "puma", ">= 6.3.1"
+gem "rack-attack", "~> 6.7"
 
 gem "omniauth-saml", "~> 2.2"
 

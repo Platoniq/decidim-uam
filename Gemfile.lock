@@ -1043,6 +1043,7 @@ DEPENDENCIES
   net-pop (~> 0.1.1)
   omniauth-saml (~> 2.2)
   puma (>= 6.3.1)
+  rack-attack (~> 6.7)
   sidekiq (~> 7.0)
   web-console (~> 4.2)
   whenever
